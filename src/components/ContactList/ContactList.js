@@ -1,6 +1,6 @@
 import { List, Item, Btn } from 'components/ContactList/ContactList.styled'
 import {useDispatch, useSelector  } from "react-redux";
-import {deleteContact} from "redux/actions";   
+import {deleteContact} from "redux/contactsSlice";   
 import { getContacts, getFilterValue } from "redux/selectors";
 
 
@@ -16,7 +16,6 @@ const ContactList = () => {
             contacts.filter(contact => contact.name.toLowerCase().includes(filter.toLowerCase()))
         )
     }
-
    return ( 
             <List>
                 {(filter === ''

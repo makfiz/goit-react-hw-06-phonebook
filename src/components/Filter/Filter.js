@@ -1,7 +1,7 @@
 import {useDispatch } from "react-redux";
 
 import { FilterWraper } from 'components/Filter/Filter.styled'
-import { filterByValue } from "redux/actions";
+import { filterByValue } from "redux/filterSlice";
 
 
 const Filter = () => {
